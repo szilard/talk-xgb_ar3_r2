@@ -3,7 +3,8 @@
   "scripts": {
     "build:html": "marp ../slides.md --html -o ../dist/index.html",
     "build:pdf": "marp ../slides.md --html --pdf --allow-local-files -o ../dist/slides.pdf",
-    "build": "npm run build:html && npm run build:pdf"
+    "build:assets": "if [ -d ../images ]; then cp -r ../images ../dist/; fi",
+    "build": "npm run build:html && npm run build:pdf && npm run build:assets"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "4.5.1"
