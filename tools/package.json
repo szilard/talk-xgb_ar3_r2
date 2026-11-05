@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "build:html": "marp ../slides.md --html -o ../dist/index.html",
+    "build:pdf": "marp ../slides.md --html --pdf --allow-local-files -o ../dist/slides.pdf",
+    "build": "npm run build:html && npm run build:pdf"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.5.1"
+  }
+}
