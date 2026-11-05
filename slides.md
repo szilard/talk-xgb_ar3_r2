@@ -9,16 +9,16 @@ h1 { margin-bottom: 1em; }
 p:last-of-type { color: #888; margin-top: 2em; }
 </style>
 
-# Title
+# Benchmarking AI Agents for Optimizing ML Pipelines: An XGBoost Case Study
 
 **Szilard Pafka, PhD**
 Chief Scientist, Epoch
 
-Date · Location
+Real Data Science Meetup USA · December 2026
 
 ---
 
 ## Content
 
-Content
+![alt text](image.png)
 
