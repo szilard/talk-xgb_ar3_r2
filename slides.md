@@ -18,5 +18,5 @@ Real Data Science Meetup USA · December 2026
 
 ---
 
-![alt text](images/p01-bio.png)
+![bg h:90%](images/p01-bio.png)
 
