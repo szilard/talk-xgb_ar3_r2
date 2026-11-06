@@ -67,10 +67,11 @@ December 2026
 
 <style scoped>
 section { justify-content: center; padding: 30px 160px; }
-p:first-of-type { text-align: left; }
-p:last-of-type { text-align: right; }
+ul { list-style: none; padding: 0; margin: 0.5em 0; }
+ul:first-of-type { text-align: left; }
+ul:last-of-type { text-align: right; }
 </style>
 
-![h:180](images/p03-gbm-best-comment.png)
+- ![h:180](images/p03-gbm-best-comment.png)
 
-![h:420](images/p04-gbm-poll.png)
+* ![h:420](images/p04-gbm-poll.png)
