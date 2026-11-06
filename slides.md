@@ -57,7 +57,7 @@ December 2026
 * 2010s: more OS implementations: sklearn, H2O, XGBoost, LightGBM, catboost etc.
 * early/mid 2010s: top practitioners know it's usually the best algo
 * mid 2010s: implementations improve in scalability (speed/RAM usage)
-* later due to success in Kaggle competitions it becames common knowledge (esp. after XGboost release) "*GBMs are the best ML algo for tabular data*"
+* later due to success in Kaggle competitions it became common knowledge (esp. after XGboost release) "*GBMs are the best ML algo for tabular data*"
 
 ---
 
