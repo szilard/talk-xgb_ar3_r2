@@ -53,11 +53,11 @@ December 2026
 
 * 1990s: Adaboost (Freund & Schapire), Gradient Boosting Machines (Friedman)
 * 2000s: implementations: TreeNet, R gbm
-* still somewhat niche, but **2006** Caruana paper (An Empirical Comparison of Supervised Learning Algorithms) put it as **the best algo (beating trees, neural nets, SVM etc.)**
+* still somewhat niche, but 2006 Caruana paper (An Empirical Comparison of Supervised Learning Algorithms) put it as the best algo (beating trees, neural nets, SVM etc.)
 * 2010s: more OS implementations: sklearn, H2O, XGBoost, LightGBM, catboost etc.
 * early/mid 2010s: top practitioners know it's usually the best algo
 * mid 2010s: implementations improve in scalability (speed/RAM usage)
-* later due to success in Kaggle competitions becames common knowledge (esp. after XGboost release) "GBMs are the best ML algo for tabular data"
+* later due to success in Kaggle competitions it becames common knowledge (esp. after XGboost release) "*GBMs are the best ML algo for tabular data*"
 
 ---
 
