@@ -75,3 +75,20 @@ ul:last-of-type { text-align: right; }
 - ![h:180](images/p03-gbm-best-comment.png)
 
 * ![h:420](images/p04-gbm-poll.png)
+
+---
+
+## GBM implementations
+
+* 2015: benchmark accuracy / speed / memory on data sizes 100K, 1M, 10M  
+    * `https://github.com/szilard/benchm-ml` (1900 stars)
+    * top algos: H2O, XGBoost; later LightGBM, catboost 
+* 2017-present: `https://github.com/szilard/gbm-perf`
+    * full auto with Docker
+    * GPU implementations
+    * tracks performance over the years
+    * best in speed: GPU: XGBoost, CPU: LightGBM/XGBoost
+    * other criteria: accuracy, ease of deployment
+    * polls (usage): XGboost > LightGBM > H2O > catboost
+
+
