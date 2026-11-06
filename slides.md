@@ -25,7 +25,7 @@ December 2026
 
 ### Disclaimer:
 
-* I am not representing my employer (Epoch) in this talk
+- I am not representing my employer (Epoch) in this talk
 
 - I cannot confirm nor deny if Epoch is using any of the methods, tools, results etc. mentioned in this talk
 
