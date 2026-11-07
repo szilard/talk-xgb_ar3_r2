@@ -104,17 +104,15 @@ section { justify-content: flex-start; padding-top: 40px; }
 
 ## Deep Learning (before LLMs)
 
+<style scoped>
+section { justify-content: flex-start; padding-top: 30px; }
+li:has(img) { list-style: none; text-align: center; }
+</style>
+
 * 2010s: computer vision, later other limited domains (e.g. games)
 * on tabular/business data usually GBM > (deep) neural nets
 * late 2010s/early 2020s: a proliferation of DL methods trying to beat GBMs: TabNet, TabTransformer, SAINT, FT-Transformer
-
-<style scoped>
-section { justify-content: flex-start; padding-top: 30px; }
-p { text-align: center; }
-</style>
-
-![h:300](images/p20-tabular-dl-benchmark.png)
-
+* ![h:300](images/p20-tabular-dl-benchmark.png)
 * most recently TabPFN, TabICL (inspired by LLMs)
 
 ---
