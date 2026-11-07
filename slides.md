@@ -122,6 +122,7 @@ li:has(img) { list-style: none; text-align: center; }
 <style scoped>
 section > ul:last-of-type { padding-left: 0; }
 section > ul:last-of-type > li { list-style: none; }
+section > ul:last-of-type ul { list-style-type: disc; }
 </style>
 
 Performance determined by:
@@ -134,7 +135,7 @@ Performance determined by:
 <!-- -->
 
 * Traditionally:
-    * feature engineering: manual, based on domain knowledge
+    - feature engineering: manual, based on domain knowledge
     * hyperparameter tuning: manual or random search etc.
 
 ---
