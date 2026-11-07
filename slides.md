@@ -119,6 +119,11 @@ li:has(img) { list-style: none; text-align: center; }
 
 ## ML Pipeline
 
+<style scoped>
+section > ul:last-of-type { padding-left: 0; }
+section > ul:last-of-type > li { list-style: none; }
+</style>
+
 Performance determined by:
 - data cleaning
 * feature engineering
@@ -126,9 +131,11 @@ Performance determined by:
 * hyperparameter tuning
 * ensembles
 
-Traditionally:
-- feature engineering: manual, based on domain knowledge
-- hyperparameter tuning: manual or random search etc.
+<!-- -->
+
+* Traditionally:
+    * feature engineering: manual, based on domain knowledge
+    * hyperparameter tuning: manual or random search etc.
 
 ---
 
