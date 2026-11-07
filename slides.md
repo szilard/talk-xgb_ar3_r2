@@ -121,7 +121,7 @@ p { text-align: center; }
 
 ## ML Pipeline
 
-Preformance determined by:
+Performance determined by:
 - data cleaning
 * feature engineering
 * the algo
