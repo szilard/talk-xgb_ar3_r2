@@ -142,15 +142,22 @@ Performance determined by:
 
 ## Best Algo for Tabular Data According to AI/LLMs
 
+<style scoped>
+section > ul { padding-left: 0; }
+section > ul > li { list-style: none; }
+</style>
+
 "what are the best algorithms for supervised learning with tabular data? very short answer"
 
-Opus 5.5 (Nov. 2026):
-
-1. **Gradient-boosted trees: LightGBM, XGBoost or CatBoost. These are the default and are hard to beat on most datasets.**
-2. Tabular foundation models: TabPFN (v2 or 2.5) and TabICL. On small-to-medium datasets (up to about 10k–50k rows).
-3. Modern deep learning models: TabM and RealMLP. 
-4. Ensembles and AutoML
-5. Baselines: logistic or linear regression and random forests. 
+* Opus 5.5 (Nov. 2026):
+    1. **Gradient-boosted trees: LightGBM, XGBoost or CatBoost. These are the default and are hard to beat on most datasets.**
+*
+    2. Tabular foundation models: TabPFN (v2 or 2.5) and TabICL. On small-to-medium datasets (up to about 10k–50k rows).
+    3. Modern deep learning models: TabM and RealMLP.
+*
+    4. Ensembles and AutoML
+*
+    5. Baselines: logistic or linear regression and random forests.
 
 ---
 
