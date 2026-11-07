@@ -98,7 +98,7 @@ section { justify-content: flex-start; padding-top: 40px; }
 
 ---
 
-![bg h:90%](images/p12-gbm-library-poll-2020.png)
+![bg h:80%](images/p12-gbm-library-poll-2020.png)
 
 ---
 
@@ -145,6 +145,7 @@ Performance determined by:
 <style scoped>
 section > ul { padding-left: 0; }
 section > ul > li { list-style: none; }
+section > ul ol { list-style-type: decimal; }
 </style>
 
 "what are the best algorithms for supervised learning with tabular data? very short answer"
