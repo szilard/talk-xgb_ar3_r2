@@ -190,7 +190,7 @@ section > ul:last-of-type ul { list-style-type: disc; }
 * Can we use them for
     - feature engineering
     - hyperparameter tuning
-* Hence our project for optimizing the ML pipeline
+* Hence our project for optimizing the ML pipeline using LLMs
 
 ---
 
