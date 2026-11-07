@@ -35,7 +35,7 @@ December 2026
 
 ---
 
-# Before AI
+# Before AI/LLMs
 
 ## Machine Learning in Business 
 
@@ -52,7 +52,7 @@ December 2026
 ## Gradient Boosting / GBM / GBDT
 
 * 1990s: Adaboost (Freund & Schapire), Gradient Boosting Machines (Friedman)
-* 2000s: implementations: TreeNet, R gbm
+* early 2000s: implementations: TreeNet, R gbm
 * still somewhat niche, but 2006 Caruana paper (An Empirical Comparison of Supervised Learning Algorithms) put it as the best algo (beating trees, neural nets, SVM etc.)
 * 2010s: more OS implementations: sklearn, H2O, XGBoost, LightGBM, catboost etc.
 * early/mid 2010s: top practitioners know it's usually the best algo
@@ -61,7 +61,7 @@ December 2026
 
 ---
 
-![bg h:90%](images/p02-xgboost-talk-2016.png)
+![bg h:90%](images/p10-xgboost-talk-2016.png)
 
 ---
 
@@ -72,23 +72,112 @@ ul:first-of-type { text-align: left; }
 ul:last-of-type { text-align: right; }
 </style>
 
-- ![h:180](images/p03-gbm-best-comment.png)
+- ![h:180](images/p11a-gbm-best-comment.png)
 
-* ![h:420](images/p04-gbm-poll.png)
+* ![h:420](images/p11b-gbm-poll.png)
 
 ---
 
+<style scoped>
+section { justify-content: flex-start; padding-top: 40px; }
+</style>
+
 ## GBM implementations
 
-* 2015: benchmark accuracy / speed / memory on data sizes 100K, 1M, 10M  
-    * `https://github.com/szilard/benchm-ml` (1900 stars)
-    * top algos: H2O, XGBoost; later LightGBM, catboost 
-* 2017-present: `https://github.com/szilard/gbm-perf`
-    * full auto with Docker
+* 2015: ML algos/OS implementations on data sizes 100K, 1M, 10M
+    * benchmark accuracy / speed / memory   
+    * `https://github.com/szilard/benchm-ml` (~2000 github stars)
+    * GBMs + others (random forests, neural nets etc.)
+* 2017-present: GBMs only (top: H2O, XGboost, LightGBM, catboost)
+    * `https://github.com/szilard/gbm-perf`
+    * full automation with Docker
     * GPU implementations
     * tracks performance over the years
     * best in speed: GPU: XGBoost, CPU: LightGBM/XGBoost
     * other criteria: accuracy, ease of deployment
-    * polls (usage): XGboost > LightGBM > H2O > catboost
+
+---
+
+![bg h:90%](images/p12-gbm-library-poll-2020.png)
+
+---
+
+## Deep Learning (before LLMs)
+
+* 2010s: computer vision, later other limited domains (e.g. games)
+* on tabular/business data usually GBM > (deep) neural nets
+* late 2010s/early 2020s: a proliferation of DL methods trying to beat GBMs: TabNet, TabTransformer, SAINT, FT-Transformer
+
+<style scoped>
+section { justify-content: flex-start; padding-top: 30px; }
+p { text-align: center; }
+</style>
+
+![h:300](images/p20-tabular-dl-benchmark.png)
+
+* most recently TabPFN, TabICL (inspired by LLMs)
+
+---
+
+## ML Pipeline
+
+Preformance determined by:
+- data cleaning
+* feature engineering
+* the algo
+* hyperparameter tuning
+* ensembles
+
+Traditionally:
+- feature engineering: manual, based on domain knowledge
+- hyperparameter tuning: manual or random search etc.
+
+---
+
+## Best Algo for Tabular Data According to AI/LLMs
+
+"what are the best algorithms for supervised learning with tabular data? very short answer"
+
+Opus 5.5 (Nov. 2026):
+
+1. **Gradient-boosted trees: LightGBM, XGBoost or CatBoost. These are the default and are hard to beat on most datasets.**
+2. Tabular foundation models: TabPFN (v2 or 2.5) and TabICL. On small-to-medium datasets (up to about 10k–50k rows).
+3. Modern deep learning models: TabM and RealMLP. 
+4. Ensembles and AutoML
+5. Baselines: logistic or linear regression and random forests. 
+
+---
+
+## LLMs
+
+* "why use the above algos? can't LLMs just look at the data and make better predictions?"
+
+* Mostly no. LLMs that read a table as text and predict directly lose to GBDTs and TabPFN:
+
+   * Numbers become tokens. LLMs are weak at precise numeric comparison and at spotting patterns across thousands of rows.
+   * Context limits. 
+   * Cost and speed. 
+   * Outputs can vary between runs, probabilities are poorly calibrated, and you can't easily validate or reproduce them.
+
+---
+
+## LLMs
+
+* excellent for writing code
+* great domain knowledge + can easily aquire more
+
+Can we use them for 
+* feature engineering
+* hyperparameter tuning
+
+Hence our project for optimizing the ML pipeline
+
+---
+
+## Setup
 
 
+
+---
+
+![bg h:70%](images/p90-contact.png)
