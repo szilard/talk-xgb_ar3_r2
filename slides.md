@@ -177,14 +177,20 @@ section > ul ol { list-style-type: decimal; }
 
 ## LLMs
 
-* excellent for writing code
-* great domain knowledge + can easily aquire more
+<style scoped>
+section > ul:last-of-type { padding-left: 0; }
+section > ul:last-of-type > li { list-style: none; }
+section > ul:last-of-type > li:last-child { margin-top: 0.8em; }
+section > ul:last-of-type ul { list-style-type: disc; }
+</style>
 
-Can we use them for 
-* feature engineering
-* hyperparameter tuning
+- excellent for writing code
+- great domain knowledge + can easily acquire more
 
-Hence our project for optimizing the ML pipeline
+* Can we use them for
+    - feature engineering
+    - hyperparameter tuning
+* Hence our project for optimizing the ML pipeline
 
 ---
 
