@@ -196,7 +196,54 @@ section > ul:last-of-type ul { list-style-type: disc; }
 
 ## Setup
 
+* AI agent (harness + LLM, e.g. codex + GPT-6.1 Sol)
+* instructions inspired from Karpathy's autoresearch project
+* gets starter ML pipeline for binary classification on a public airline flight delay dataset (Python code: data -> transform -> train XGBoost -> evaluate)
+* has 1 hour to iterate/improve it
+* can change feature engineering, XGBoost hyperparameters
+* reruns pipeline and keep it if better / discard otherwise
+* can do research on the web about what to try next
+* each iteration takes 1-2 mins
+* one run has typically 30-60 iterations
 
+---
+
+## 1 Run: 1 AI Agent for 1 Hour
+
+<style scoped>
+section { justify-content: flex-start; padding-top: 30px; }
+li:has(img) { list-style: none; text-align: center; }
+</style>
+
+* data: train, eval, holdout
+* AI agent sees only train + eval, uses eval AUC to iterate
+* ![h:520](images/p30-auc-vs-n-run.png)
+
+---
+
+## What Makes Improvements
+
+* Feature engineering:
+  * Calendar fields as numbers, not categories
+  * Add DayOfYear and season features
+  * Add holiday offsets (Thanksgiving, Christmas, July 4)
+* Hyperparameter Tuning
+  * Shallower trees (depth 3–5)
+  * More trees at a lower learning rate
+  * Regularize the leaves (min_child_weight, lambda, alpha)
+  * Subsample rows and columns (0.6–0.8)
+* Ensemble (several models + average them)
+
+---
+
+## Million Dollar Question
+
+* How to get good results?
+* What determines good performance?
+   * strong LLM?
+   * the harness?
+   * a good setup/prompt?
+   * how about performance vs cost?
 
 ---
 
