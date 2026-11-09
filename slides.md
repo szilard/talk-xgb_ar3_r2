@@ -129,7 +129,7 @@ Performance determined by:
 - data cleaning
 * feature engineering
 * the algo
-* hyperparameter tuning
+* hyperparameter tuning (for GBMs: lots of)
 * ensembles
 
 <!-- -->
@@ -203,7 +203,7 @@ section > ul:last-of-type ul { list-style-type: disc; }
 * gets starter ML pipeline for binary classification on a public airline flight delay dataset (Python code: data -> transform -> train XGBoost -> evaluate)
 * has 1 hour to iterate/improve it
 * can change feature engineering, XGBoost hyperparameters
-* reruns pipeline and keep it if better / discard otherwise
+* reruns pipeline and keeps it if better / discards otherwise
 * can do research on the web about what to try next
 * each iteration takes 1-2 mins
 * one run has typically 30-60 iterations
