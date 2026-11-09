@@ -313,4 +313,36 @@ Same setup - 2 LLMs (Sol vs Astra)
 
 ---
 
+<!-- _class: plot -->
+
+Same setup - 2 LLMs - 20 identical runs each
+
+![h:580](images/p32-auc-paths-per-model.png)
+
+---
+
+<!-- _class: plot -->
+
+Same setup - 3 LLMs - 20 identical runs each
+
+![h:590](images/p33-auc-per-run-1.svg)
+
+---
+
+<!-- _class: plot -->
+
+Same setup - 3 LLMs - 20 identical runs each
+
+![h:590](images/p33-auc-per-run-2.svg)
+
+---
+
+<!-- _class: plot -->
+
+Same setup - 3 LLMs - 20 identical runs each
+
+![h:590](images/p33-auc-per-run-3.svg)
+
+---
+
 ![bg h:70%](images/p90-contact.png)
