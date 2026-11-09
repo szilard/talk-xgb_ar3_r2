@@ -70,6 +70,7 @@ def main(repo):
         fig.subplots_adjust(left=0.09, right=0.98, top=0.92, bottom=0.2)
         for (t, auc), colour in paths[:n]:
             ax.step(t, auc, where="post", color=colour, lw=2.2, zorder=2)
+            ax.plot(t[-1], auc[-1], "o", color=colour, ms=8, zorder=3)  # dot at the end: the final AUC
         ax.set_xlim(XLIM)
         ax.set_ylim(YLIM)
         ax.set_facecolor(SURFACE)
@@ -79,11 +80,11 @@ def main(repo):
             ax.spines[s].set_visible(False)
         ax.spines["bottom"].set_color(GRID)
         ax.tick_params(colors=INK2, length=0)
-        ax.set_xlabel("minutes since the clock started", color=INK2)
-        ax.set_ylabel("holdout AUC", color=INK2)
+        ax.set_xlabel("minutes since the clock started", color=INK2, fontsize=17)
+        ax.set_ylabel("holdout AUC", color=INK2, fontsize=17)
         legend = [Line2D([], [], color=c, lw=2.6, label=m) for _, m, c, _ in MODELS]
         fig.legend(handles=legend, loc="lower center", bbox_to_anchor=(0.5, 0.02), ncol=len(legend),
-                   frameon=False, labelcolor=INK2, handletextpad=0.5, columnspacing=1.6)
+                   frameon=False, labelcolor=INK2, fontsize=17, handlelength=2.5, handletextpad=0.6, columnspacing=2)
         out = OUT / f"p31-auc-paths-{n:02d}.svg"
         fig.savefig(out, facecolor=SURFACE, metadata={"Date": None})
         plt.close(fig)

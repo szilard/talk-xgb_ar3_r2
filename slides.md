@@ -250,31 +250,66 @@ li:has(img) { list-style: none; text-align: center; }
 
 ---
 
-![bg h:95%](images/p31-auc-paths-00.svg)
+<!-- _class: plot -->
+
+<style>
+/* the AUC path slides (class plot): a line of text at the top, plot centered below */
+section.plot { justify-content: flex-start; padding-top: 25px; }
+section.plot p { margin: 0 0 10px; }
+section.plot p:has(img) { text-align: center; margin: 0; }
+</style>
+
+Same setup - 2 LLMs (Sol vs Astra)
+
+![h:620](images/p31-auc-paths-00.svg)
 
 ---
 
-![bg h:95%](images/p31-auc-paths-01.svg)
+<!-- _class: plot -->
+
+Same setup - 2 LLMs (Sol vs Astra)
+
+![h:620](images/p31-auc-paths-01.svg)
 
 ---
 
-![bg h:95%](images/p31-auc-paths-02.svg)
+<!-- _class: plot -->
+
+Same setup - 2 LLMs (Sol vs Astra)
+
+![h:620](images/p31-auc-paths-02.svg)
 
 ---
 
-![bg h:95%](images/p31-auc-paths-03.svg)
+<!-- _class: plot -->
+
+Same setup - 2 LLMs (Sol vs Astra)
+
+![h:620](images/p31-auc-paths-03.svg)
 
 ---
 
-![bg h:95%](images/p31-auc-paths-04.svg)
+<!-- _class: plot -->
+
+Same setup - 2 LLMs (Sol vs Astra)
+
+![h:620](images/p31-auc-paths-04.svg)
 
 ---
 
-![bg h:95%](images/p31-auc-paths-05.svg)
+<!-- _class: plot -->
+
+Same setup - 2 LLMs (Sol vs Astra)
+
+![h:620](images/p31-auc-paths-05.svg)
 
 ---
 
-![bg h:95%](images/p31-auc-paths-06.svg)
+<!-- _class: plot -->
+
+Same setup - 2 LLMs (Sol vs Astra)
+
+![h:620](images/p31-auc-paths-06.svg)
 
 ---
 
