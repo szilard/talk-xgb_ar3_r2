@@ -323,7 +323,7 @@ Same setup - 2 LLMs - 20 identical runs each
 
 <!-- _class: plot -->
 
-Same setup - 3 LLMs - 20 identical runs each
+Same setup - 2 LLMs - 20 identical runs each
 
 ![h:590](images/p33-auc-per-run-1.svg)
 
