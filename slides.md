@@ -358,4 +358,12 @@ li { font-size: 45px; margin: 1.3em 0; }
 
 ---
 
+![bg h:96%](images/p34-auc-per-run-all-models.png)
+
+---
+
+![bg h:95%](images/p35-mean-auc-per-model.png)
+
+---
+
 ![bg h:70%](images/p90-contact.png)
