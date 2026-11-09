@@ -1,6 +1,7 @@
 ---
 marp: true
 theme: default
+math: mathjax
 ---
 
 <!-- _class: lead -->
