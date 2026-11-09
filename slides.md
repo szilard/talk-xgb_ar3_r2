@@ -366,4 +366,19 @@ li { font-size: 45px; margin: 1.3em 0; }
 
 ---
 
-![bg h:70%](images/p90-contact.png)
+<style scoped>
+/* contact slide: profile picture on the left, contacts with icons on the right */
+section { display: grid; grid-template-columns: auto auto; justify-content: center; align-items: center; column-gap: 110px; }
+section > p { margin: 0; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: center; gap: 27px; font-size: 34px; margin: 41px 0; }
+li img { width: 36px; height: 36px; }
+li a { color: inherit; text-decoration: none; }
+</style>
+
+![w:330](images/p91-github-avatar.jpg)
+
+- ![](images/p91-icon-email.svg) spafka@gmail.com
+- ![](images/p91-icon-x.svg) @SzilardPafka
+- ![](images/p91-icon-linkedin.svg) linkedin.com/in/szilard
+- ![](images/p91-icon-github.svg) github.com/szilard
