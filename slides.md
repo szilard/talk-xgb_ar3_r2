@@ -28,7 +28,7 @@ December 2026
 
 - I am not representing my employer (Epoch) in this talk
 
-- I cannot confirm nor deny if Epoch is using any of the methods, tools, results etc. mentioned in this talk
+- I can neither confirm nor deny whether Epoch is using any of the methods, tools, results etc. mentioned in this talk
 
 <br>
 
@@ -52,13 +52,13 @@ December 2026
 
 ## Gradient Boosting / GBM / GBDT
 
-* 1990s: Adaboost (Freund & Schapire), Gradient Boosting Machines (Friedman)
+* 1990s: AdaBoost (Freund & Schapire), Gradient Boosting Machines (Friedman)
 * early 2000s: implementations: TreeNet, R gbm
-* still somewhat niche, but 2006 Caruana paper (An Empirical Comparison of Supervised Learning Algorithms) put it as the best algo (beating trees, neural nets, SVM etc.)
-* 2010s: more OS implementations: sklearn, H2O, XGBoost, LightGBM, catboost etc.
+* still somewhat niche, but the 2006 Caruana et al. paper (An Empirical Comparison of Supervised Learning Algorithms) found it the best algo (beating trees, neural nets, SVM etc.)
+* 2010s: more open source implementations: sklearn, H2O, XGBoost, LightGBM, CatBoost etc.
 * early/mid 2010s: top practitioners know it's usually the best algo
 * mid 2010s: implementations improve in scalability (speed/RAM usage)
-* later due to success in Kaggle competitions it became common knowledge (esp. due to XGboost) "*GBMs are the best ML algo for tabular data*"
+* later, thanks to wins in Kaggle competitions (esp. with XGBoost), it became common knowledge: "*GBMs are the best ML algo for tabular data*"
 
 ---
 
@@ -85,11 +85,11 @@ section { justify-content: flex-start; padding-top: 40px; }
 
 ## GBM implementations
 
-* 2015: ML algos/OS implementations on data sizes 100K, 1M, 10M
+* 2015: ML algos / open source implementations on data sizes of 100K, 1M, 10M rows
     * benchmark accuracy / speed / memory   
-    * `https://github.com/szilard/benchm-ml` (~2000 github stars)
+    * `https://github.com/szilard/benchm-ml` (~2000 GitHub stars)
     * GBMs + others (random forests, neural nets etc.)
-* 2017-present: GBMs only (top: H2O, XGboost, LightGBM, catboost)
+* 2017-present: GBMs only (top: H2O, XGBoost, LightGBM, CatBoost)
     * `https://github.com/szilard/gbm-perf`
     * full automation with Docker
     * GPU implementations
@@ -126,11 +126,11 @@ section > ul:last-of-type > li { list-style: none; }
 section > ul:last-of-type ul { list-style-type: disc; }
 </style>
 
-Performance determined by:
+Performance is determined by:
 - data cleaning
 * feature engineering
 * the algo
-* hyperparameter tuning (for GBMs: lots of)
+* hyperparameter tuning (GBMs have lots of hyperparameters)
 * ensembles
 
 <!-- -->
@@ -141,7 +141,7 @@ Performance determined by:
 
 ---
 
-# The Age of AI/LLM
+# The Age of AI/LLMs
 
 ## Best Algo for Tabular Data According to AI/LLMs
 
@@ -190,24 +190,24 @@ section > ul:last-of-type ul { list-style-type: disc; }
 - excellent for writing code
 - great domain knowledge + can easily acquire more
 
-* Can we use them for
+* Can we use them for:
     - feature engineering
     - hyperparameter tuning
-* Hence our project for optimizing the ML pipeline using LLMs
+* Hence our project: optimizing the ML pipeline with LLMs
 
 ---
 
 ## Setup
 
-* AI agent (harness + LLM, e.g. codex + GPT-6.1 Sol)
-* instructions inspired from Karpathy's autoresearch project
-* gets starter ML pipeline for binary classification on a public airline flight delay dataset (Python code: data -> transform -> train XGBoost -> evaluate)
+* AI agent (harness + LLM, e.g. Codex + GPT-6.1 Sol)
+* instructions inspired by Karpathy's autoresearch project
+* gets a starter ML pipeline for binary classification on a public airline flight delay dataset (Python code: data -> transform -> train XGBoost -> evaluate)
 * has 1 hour to iterate/improve it
-* can change feature engineering, XGBoost hyperparameters
-* reruns pipeline and keeps it if better / discards otherwise
+* can change the feature engineering and the XGBoost hyperparameters
+* reruns the pipeline, keeps the change if better, discards it otherwise
 * can do research on the web about what to try next
 * each iteration takes 1-2 mins
-* one run has typically 30-60 iterations
+* one run typically has 30-60 iterations
 
 ---
 
@@ -230,12 +230,12 @@ li:has(img) { list-style: none; text-align: center; }
   * Calendar fields as numbers, not categories
   * Add DayOfYear and season features
   * Add holiday offsets (Thanksgiving, Christmas, July 4)
-* Hyperparameter Tuning
+* Hyperparameter tuning:
   * Shallower trees (depth 3–5)
   * More trees at a lower learning rate
   * Regularize the leaves (min_child_weight, lambda, alpha)
   * Subsample rows and columns (0.6–0.8)
-* Ensemble (several models + average them)
+* Ensembles (several models, averaged)
 
 ---
 
@@ -354,7 +354,7 @@ li { font-size: 45px; margin: 1.3em 0; }
 - The variation in performance of identical runs is huge
 * One run is not enough to compare different setups
 * "Benchmarks" based on 1 run might be garbage
-* You need N runs and take the average (and its CI)
+* You need N runs, then take the average (and its CI)
 
 ---
 
