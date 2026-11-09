@@ -1,0 +1,21 @@
+run	best_commit	eval_auc	holdout_auc	gap	experiments	valid	flags
+astra6_n20-1	50e74b8	0.6900	0.6880	-0.0020	47	yes	
+astra6_n20-2	6826f09	0.6863	0.6836	-0.0027	42	yes	
+astra6_n20-3	43097e4	0.6918	0.6886	-0.0032	50	yes	
+astra6_n20-4	c58ee9e	0.6843	0.6815	-0.0028	36	yes	
+astra6_n20-5	ade4fcf	0.6876	0.6846	-0.0030	47	caveat	keep_rule
+astra6_n20-6	e8e4e36	0.6881	0.6846	-0.0035	41	yes	
+astra6_n20-7	063f35f	0.6905	0.6881	-0.0024	43	yes	
+astra6_n20-8	eccad8d	0.6879	0.6856	-0.0023	50	caveat	keep_rule
+astra6_n20-9	d1fbdd2	0.6913	0.6888	-0.0025	36	yes	
+astra6_n20-10	0d30a13	0.6878	0.6845	-0.0033	45	yes	
+astra6_n20-11	d9dcf2d	0.6897	0.6860	-0.0037	52	yes	
+astra6_n20-12	8052d06	0.6909	0.6873	-0.0036	51	caveat	keep_rule
+astra6_n20-13	7cdfba0	0.6935	0.6906	-0.0029	59	yes	
+astra6_n20-14	4c0a951	0.6917	0.6888	-0.0029	62	yes	
+astra6_n20-15	896f434	0.6875	0.6856	-0.0019	54	yes	
+astra6_n20-16	cb6c121	0.6894	0.6870	-0.0024	49	yes	
+astra6_n20-17	a567151	0.6898	0.6872	-0.0026	46	yes	
+astra6_n20-18	1f5c0f6	0.6901	0.6878	-0.0023	44	yes	
+astra6_n20-19	cbf5e51	0.6910	0.6876	-0.0034	49	yes	
+astra6_n20-20	fc0e2f7	0.6876	0.6853	-0.0023	40	yes	

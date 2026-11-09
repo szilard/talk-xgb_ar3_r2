@@ -250,4 +250,32 @@ li:has(img) { list-style: none; text-align: center; }
 
 ---
 
+![bg h:95%](images/p31-auc-paths-00.svg)
+
+---
+
+![bg h:95%](images/p31-auc-paths-01.svg)
+
+---
+
+![bg h:95%](images/p31-auc-paths-02.svg)
+
+---
+
+![bg h:95%](images/p31-auc-paths-03.svg)
+
+---
+
+![bg h:95%](images/p31-auc-paths-04.svg)
+
+---
+
+![bg h:95%](images/p31-auc-paths-05.svg)
+
+---
+
+![bg h:95%](images/p31-auc-paths-06.svg)
+
+---
+
 ![bg h:70%](images/p90-contact.png)
