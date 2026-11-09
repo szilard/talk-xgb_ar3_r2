@@ -379,6 +379,6 @@ li a { color: inherit; text-decoration: none; }
 ![w:330](images/p91-github-avatar.jpg)
 
 - ![](images/p91-icon-email.svg) spafka@gmail.com
-- ![](images/p91-icon-x.svg) @SzilardPafka
-- ![](images/p91-icon-linkedin.svg) linkedin.com/in/szilard
 - ![](images/p91-icon-github.svg) github.com/szilard
+- ![](images/p91-icon-linkedin.svg) linkedin.com/in/szilard
+- ![](images/p91-icon-x.svg) @SzilardPafka
