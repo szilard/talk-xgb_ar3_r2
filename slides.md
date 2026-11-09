@@ -351,7 +351,7 @@ ul { list-style: none; padding: 0; }
 li { font-size: 45px; margin: 1.3em 0; }
 </style>
 
-* The variation in performance of identical runs is huge
+- The variation in performance of identical runs is huge
 * One run is not enough to compare different setups
 * "Benchmarks" based on 1 run might be garbage
 * You need N runs and take the average (and its CI)
