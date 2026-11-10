@@ -105,15 +105,23 @@ section { justify-content: flex-start; padding-top: 40px; }
 
 ## Deep Learning (before LLMs)
 
+* 2010s: computer vision, later other limited domains (e.g. games, for example beating world champion on Go)
+* on tabular/business data: GBM > (deep) neural nets (see e.g. my benchmarks ~2015)
+* late 2010s/early 2020s: a proliferation of DL methods designed specifically for tabular data: TabNet, TabTransformer, SAINT, FT-Transformer etc.
+* can these beat GBMs?
+
+---
+
 <style scoped>
 section { justify-content: flex-start; padding-top: 30px; }
-li:has(img) { list-style: none; text-align: center; }
+p:has(img) { text-align: center; margin: 0; }
+p.src { text-align: center; font-size: 0.55em; color: #666; margin: 4px 0 16px; }
 </style>
 
-* 2010s: computer vision, later other limited domains (e.g. games)
-* on tabular/business data usually GBM > (deep) neural nets
-* late 2010s/early 2020s: a proliferation of DL methods trying to beat GBMs: TabNet, TabTransformer, SAINT, FT-Transformer
-* ![h:300](images/p20-tabular-dl-benchmark.png)
+![h:520](images/p20-tabular-dl-benchmark.png)
+
+<p class="src">Source: Borisov et al., <a href="https://arxiv.org/abs/2110.01889">arXiv:2110.01889</a></p>
+
 * most recently TabPFN, TabICL (inspired by LLMs)
 
 ---
