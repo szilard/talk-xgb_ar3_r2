@@ -173,7 +173,7 @@ section > ul ol { list-style-type: decimal; }
 
 ---
 
-## LLMs
+## Can We Use LLMs Instead of ML Algos?
 
 * "why use the above algos? can't LLMs just look at the data and make better predictions?"
 
@@ -186,7 +186,7 @@ section > ul ol { list-style-type: decimal; }
 
 ---
 
-## LLMs
+## Can We Use LLMs?
 
 <style scoped>
 section > ul:last-of-type { padding-left: 0; }
@@ -205,7 +205,7 @@ section > ul:last-of-type ul { list-style-type: disc; }
 
 ---
 
-## Setup
+## ML Pipeline Optimization Setup
 
 * AI agent (harness + LLM, e.g. Codex + GPT-6.1 Sol)
 * instructions inspired by Karpathy's autoresearch project
@@ -371,6 +371,82 @@ li { font-size: 45px; margin: 1.3em 0; }
 ---
 
 ![bg h:95%](images/p35-mean-auc-per-model.png)
+
+---
+
+### Factors Determining Performance
+
+<style scoped>
+section { justify-content: flex-start; padding-top: 30px; }
+p:has(img) { text-align: center; margin: 0.5em 0 0; }
+p.src { text-align: center; font-size: 0.55em; color: #666; margin: 4px 0 0; }
+</style>
+
+* LLM
+* the harness (so far: Anthropic models - claude code, OpenAI - codex, the rest - pi)
+    * N models x M harnesses (claude, codex, opencode, hermes, pi...)
+
+![h:400](images/p36-harness-x-model.png)
+
+<p class="src">Source: Eduardo Ariño de la Rubia & Szilard Pafka, <a href="https://arxiv.org/abs/2609.33812">arXiv:2609.33812</a></p>
+
+---
+
+* the prompt:  
+    * .md file ~3000 words (~7 pages if printed)
+    * `https://github.com/szilard/xgboost-autoresearch-minimal3/blob/main/program.md`
+       * Goal: tune an ML pipeline to maximize a metric
+       * Time: a fixed overall budget plus a time limit per run
+       * Scope: edit one file and don't touch the evaluation or any hidden data
+       * Loop: try a change, measure it, and keep it only if the score improves
+       * Research: web research is required, with sources cited
+    * how much does the prompt matter?
+
+
+---
+
+## Performance in this Task vs General LLMs Benchmarks
+
+<style scoped>
+section { justify-content: flex-start; padding-top: 30px; }
+p:has(img) { text-align: center; margin: 0.5em 0 0; }
+</style>
+
+![h:540](images/p37-auc-vs-aa-index.png)
+
+---
+
+## Performance in this Task vs General LLMs Benchmarks
+
+<style scoped>
+section { justify-content: flex-start; padding-top: 30px; }
+p:has(img) { text-align: center; margin: 0.5em 0 0; }
+</style>
+
+![h:540](images/p38-auc-vs-terminal-bench.png)
+
+---
+
+## Performance vs Cost
+
+<style scoped>
+section { justify-content: flex-start; padding-top: 30px; }
+p:has(img) { text-align: center; margin: 0.5em 0 0; }
+</style>
+
+![h:540](images/p39-auc-vs-cost.png)
+
+---
+
+### References:
+
+- 2015 ML benchmark (archive): `https://github.com/szilard/benchm-ml`
+- 2017-present GBM benchmark: `https://github.com/szilard/GBM-perf`
+- XGBoost autoresearch original framework + blog post (May 2026): `https://github.com/szilard/xgboost-autoresearch`
+- current framework (multi-LLMs, multi-runs, fully automated) (Oct 2026):
+    - agent (1 run): `https://github.com/szilard/xgboost-autoresearch-minimal3`
+    - orchestrator+results: `https://github.com/szilard/xgboost-autoresearch-minimal3-runs`
+
 
 ---
 
