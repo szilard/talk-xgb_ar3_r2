@@ -378,17 +378,14 @@ li { font-size: 45px; margin: 1.3em 0; }
 
 <style scoped>
 section { justify-content: flex-start; padding-top: 30px; }
-p:has(img) { text-align: center; margin: 0.5em 0 0; }
-p.src { text-align: center; font-size: 0.55em; color: #666; margin: 4px 0 0; }
+li:has(img) { list-style: none; text-align: center; margin-top: 0.5em; }
+.src { font-size: 0.55em; color: #666; }
 </style>
 
 * LLM
 * the harness (so far: Anthropic models - claude code, OpenAI - codex, the rest - pi)
     * N models x M harnesses (claude, codex, opencode, hermes, pi...)
-
-![h:400](images/p36-harness-x-model.png)
-
-<p class="src">Source: Eduardo Ariño de la Rubia & Szilard Pafka, <a href="https://arxiv.org/abs/2609.33812">arXiv:2609.33812</a></p>
+* ![h:400](images/p36-harness-x-model.png)<br><span class="src">Source: Eduardo Ariño de la Rubia & Szilard Pafka, <a href="https://arxiv.org/abs/2609.33812">arXiv:2609.33812</a></span>
 
 ---
 
@@ -440,12 +437,20 @@ p:has(img) { text-align: center; margin: 0.5em 0 0; }
 
 ### References:
 
+<style scoped>
+/* first list shows with the title; the second is one fragment, so the rest appears at once */
+section > ul:first-of-type { margin-bottom: 0; }
+section > ul:last-of-type { margin-top: 0; padding-left: 0; }
+section > ul:last-of-type > li { list-style: none; }
+</style>
+
 - 2015 ML benchmark (archive): `https://github.com/szilard/benchm-ml`
 - 2017-present GBM benchmark: `https://github.com/szilard/GBM-perf`
-- XGBoost autoresearch original framework + blog post (May 2026): `https://github.com/szilard/xgboost-autoresearch`
-- current framework (multi-LLMs, multi-runs, fully automated) (Oct 2026):
-    - agent (1 run): `https://github.com/szilard/xgboost-autoresearch-minimal3`
-    - orchestrator+results: `https://github.com/szilard/xgboost-autoresearch-minimal3-runs`
+
+* - XGBoost autoresearch original framework + blog post (May 2026): `https://github.com/szilard/xgboost-autoresearch`
+  - current framework (multi-LLMs, multi-runs, fully automated) (Oct 2026):
+      - agent (1 run): `https://github.com/szilard/xgboost-autoresearch-minimal3`
+      - orchestrator+results: `https://github.com/szilard/xgboost-autoresearch-minimal3-runs`
 
 
 ---
