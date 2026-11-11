@@ -403,7 +403,7 @@ li:has(img) { list-style: none; text-align: center; margin-top: 0.5em; }
 
 ---
 
-## Performance in this Task vs General LLMs Benchmarks
+## Performance in this Task vs General LLM Benchmarks
 
 <style scoped>
 section { justify-content: flex-start; padding-top: 30px; }
