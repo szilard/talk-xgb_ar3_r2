@@ -90,7 +90,7 @@ section { justify-content: flex-start; padding-top: 40px; }
     * `https://github.com/szilard/benchm-ml` (~2000 GitHub stars)
     * GBMs + others (random forests, neural nets etc.)
 * 2017-present: GBMs only (top: H2O, XGBoost, LightGBM, CatBoost)
-    * `https://github.com/szilard/gbm-perf`
+    * `https://github.com/szilard/GBM-perf`
     * full automation with Docker
     * GPU implementations
     * tracks performance over the years
@@ -105,7 +105,7 @@ section { justify-content: flex-start; padding-top: 40px; }
 
 ## Deep Learning (before LLMs)
 
-* 2010s: computer vision, later other limited domains (e.g. games, for example beating world champion on Go)
+* 2010s: computer vision, later other limited domains (e.g. games: beating the world champion in Go)
 * on tabular/business data: GBM > (deep) neural nets (see e.g. my benchmarks ~2015)
 * late 2010s/early 2020s: a proliferation of DL methods designed specifically for tabular data: TabNet, TabTransformer, SAINT, FT-Transformer etc.
 * can these beat GBMs?
@@ -164,7 +164,7 @@ section > ul ol { list-style-type: decimal; }
 * Opus 5.5 (Nov. 2026):
     1. **Gradient-boosted trees: LightGBM, XGBoost or CatBoost. These are the default and are hard to beat on most datasets.**
 *
-    2. Tabular foundation models: TabPFN (v2 or 2.5) and TabICL. On small-to-medium datasets (up to about 10k–50k rows).
+    2. Tabular foundation models: TabPFN (v2 or 2.5) and TabICL (on small-to-medium datasets, up to about 10k–50k rows).
     3. Modern deep learning models: TabM and RealMLP.
 *
     4. Ensembles and AutoML
@@ -173,7 +173,7 @@ section > ul ol { list-style-type: decimal; }
 
 ---
 
-## Can We Use LLMs Instead of ML Algos?
+## Can We Use Just LLMs Instead of ML Algos?
 
 * "why use the above algos? can't LLMs just look at the data and make better predictions?"
 
@@ -186,7 +186,7 @@ section > ul ol { list-style-type: decimal; }
 
 ---
 
-## Can We Use LLMs?
+## How Can We Use LLMs?
 
 <style scoped>
 section > ul:last-of-type { padding-left: 0; }
@@ -207,15 +207,15 @@ section > ul:last-of-type ul { list-style-type: disc; }
 
 ## ML Pipeline Optimization Setup
 
-* AI agent (harness + LLM, e.g. Codex + GPT-6.1 Sol)
+* AI agent (harness + LLM, e.g. Codex + GPT-6 Astra)
 * instructions inspired by Karpathy's autoresearch project
 * gets a starter ML pipeline for binary classification on a public airline flight delay dataset (Python code: data -> transform -> train XGBoost -> evaluate)
 * has 1 hour to iterate/improve it
 * can change the feature engineering and the XGBoost hyperparameters
 * reruns the pipeline, keeps the change if better, discards it otherwise
 * can do research on the web about what to try next
-* each iteration takes 1-2 mins
-* one run typically has 30-60 iterations
+* each iteration takes ~1 min
+* one run typically has ~60 iterations
 
 ---
 
@@ -267,7 +267,7 @@ section.plot p { margin: 0 0 10px; }
 section.plot p:has(img) { text-align: center; margin: 0; }
 </style>
 
-Same setup - 2 LLMs (Sol vs Astra)
+Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
 ![h:620](images/p31-auc-paths-00.svg)
 
@@ -275,7 +275,7 @@ Same setup - 2 LLMs (Sol vs Astra)
 
 <!-- _class: plot -->
 
-Same setup - 2 LLMs (Sol vs Astra)
+Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
 ![h:620](images/p31-auc-paths-01.svg)
 
@@ -283,7 +283,7 @@ Same setup - 2 LLMs (Sol vs Astra)
 
 <!-- _class: plot -->
 
-Same setup - 2 LLMs (Sol vs Astra)
+Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
 ![h:620](images/p31-auc-paths-02.svg)
 
@@ -291,7 +291,7 @@ Same setup - 2 LLMs (Sol vs Astra)
 
 <!-- _class: plot -->
 
-Same setup - 2 LLMs (Sol vs Astra)
+Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
 ![h:620](images/p31-auc-paths-03.svg)
 
@@ -299,7 +299,7 @@ Same setup - 2 LLMs (Sol vs Astra)
 
 <!-- _class: plot -->
 
-Same setup - 2 LLMs (Sol vs Astra)
+Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
 ![h:620](images/p31-auc-paths-04.svg)
 
@@ -307,7 +307,7 @@ Same setup - 2 LLMs (Sol vs Astra)
 
 <!-- _class: plot -->
 
-Same setup - 2 LLMs (Sol vs Astra)
+Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
 ![h:620](images/p31-auc-paths-05.svg)
 
@@ -315,7 +315,7 @@ Same setup - 2 LLMs (Sol vs Astra)
 
 <!-- _class: plot -->
 
-Same setup - 2 LLMs (Sol vs Astra)
+Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
 ![h:620](images/p31-auc-paths-06.svg)
 
@@ -353,7 +353,7 @@ Same setup - 3 LLMs - 20 identical runs each
 
 ---
 
-# Main Takeaways
+# Most Important Takeaways
 
 <style scoped>
 section { justify-content: center; }
@@ -386,7 +386,7 @@ li:has(img) { list-style: none; text-align: center; margin-top: 0.5em; }
 * LLM
 * the harness (so far: Anthropic models - claude code, OpenAI - codex, the rest - pi)
     * N models x M harnesses (claude, codex, opencode, hermes, pi...)
-* ![h:400](images/p36-harness-x-model.png)<br><span class="src">Source: Eduardo Ariño de la Rubia & Szilard Pafka, <a href="https://arxiv.org/abs/2609.33812">arXiv:2609.33812</a></span>
+* ![h:400](images/p36-harness-x-model.png)<br><span class="src">Source: Eduardo Ariño de la Rubia & Szilard Pafka, <a href="https://arxiv.org/abs/2609.33812">arXiv:2609.33812</a> (somewhat different setup)</span>
 
 ---
 
@@ -394,7 +394,7 @@ li:has(img) { list-style: none; text-align: center; margin-top: 0.5em; }
     * .md file ~3000 words (~7 pages if printed)
     * `https://github.com/szilard/xgboost-autoresearch-minimal3/blob/main/program.md`
        * Goal: tune an ML pipeline to maximize a metric
-       * Time: a fixed overall budget plus a time limit per run
+       * Time: a fixed overall budget plus a time limit per iteration
        * Scope: edit one file and don't touch the evaluation or any hidden data
        * Loop: try a change, measure it, and keep it only if the score improves
        * Research: web research is required, with sources cited
@@ -414,7 +414,7 @@ p:has(img) { text-align: center; margin: 0.5em 0 0; }
 
 ---
 
-## Performance in this Task vs General LLMs Benchmarks
+## Performance in this Task vs General LLM Benchmarks
 
 <style scoped>
 section { justify-content: flex-start; padding-top: 30px; }
