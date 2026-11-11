@@ -353,13 +353,14 @@ Same setup - 3 LLMs - 20 identical runs each
 
 ---
 
+# Main Takeaways
+
 <style scoped>
 section { justify-content: center; }
-ul { list-style: none; padding: 0; }
-li { font-size: 45px; margin: 1.3em 0; }
+li { font-size: 40px; margin: 1em 0; }
 </style>
 
-- The variation in performance of identical runs is huge
+* The variation in performance of identical runs is huge
 * One run is not enough to compare different setups
 * "Benchmarks" based on 1 run might be garbage
 * You need N runs, then take the average (and its CI)
@@ -389,7 +390,7 @@ li:has(img) { list-style: none; text-align: center; margin-top: 0.5em; }
 
 ---
 
-* the prompt:  
+- the prompt:  
     * .md file ~3000 words (~7 pages if printed)
     * `https://github.com/szilard/xgboost-autoresearch-minimal3/blob/main/program.md`
        * Goal: tune an ML pipeline to maximize a metric
