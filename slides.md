@@ -276,6 +276,7 @@ Same setup - 2 LLMs (Sol-6 vs Astra-6)
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
@@ -284,6 +285,7 @@ Same setup - 2 LLMs (Sol-6 vs Astra-6)
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
@@ -292,6 +294,7 @@ Same setup - 2 LLMs (Sol-6 vs Astra-6)
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
@@ -300,6 +303,7 @@ Same setup - 2 LLMs (Sol-6 vs Astra-6)
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
@@ -308,6 +312,7 @@ Same setup - 2 LLMs (Sol-6 vs Astra-6)
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
@@ -316,6 +321,7 @@ Same setup - 2 LLMs (Sol-6 vs Astra-6)
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 2 LLMs (Sol-6 vs Astra-6)
 
@@ -340,6 +346,7 @@ Same setup - 2 LLMs - 20 identical runs each
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 3 LLMs - 20 identical runs each
 
@@ -348,6 +355,7 @@ Same setup - 3 LLMs - 20 identical runs each
 ---
 
 <!-- _class: plot -->
+<!-- _paginate: hold -->
 
 Same setup - 3 LLMs - 20 identical runs each
 
