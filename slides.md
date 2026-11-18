@@ -2,9 +2,11 @@
 marp: true
 theme: default
 math: mathjax
+paginate: true
 ---
 
 <!-- _class: lead -->
+<!-- _paginate: false -->
 <style scoped>
 h1 { margin-bottom: 1em; }
 p:last-of-type { color: #888; margin-top: 2em; }
